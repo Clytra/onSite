@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace onSiteWeb.Models
 {
-    public class UserModel : IdentityUser
+    public class UserModel
     {
+        public int Id { get; set; }
+        public string Login { get; set; }
+        public String Password { get; set; }
+        public string Email { get; set; }
+        public string Name { get; set; }
+        public int RoleId { get; set; }
     }
 }
